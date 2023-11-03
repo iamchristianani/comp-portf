@@ -23,6 +23,19 @@ a {
   object-fit: cover;
 }
 
+.testimonial-client-images {
+  display: flex;
+  justify-content: center;
+}
+
+.testimonial-client-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+
+}
+
 .bottom-image {
   z-index: 0;
   left: 0;
@@ -74,4 +87,13 @@ a {
   background-color: rgba(22, 22, 22, 0.5);
   align-items: center;
   padding-left: 30px;
+}
+
+.slick-dots li button:before {
+  color: white;
+}
+
+.slick-dots li.slick-active button:before {
+  color:white !important;
+  font-size: 10px;
 }
