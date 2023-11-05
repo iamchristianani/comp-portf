@@ -1,13 +1,172 @@
+html,
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  color: #efedff;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+a {
+  text-decoration: none;
+  color: #efedff;
+}
+
+.site-logo {
+  height: 50px;
+}
+
+.mobile-view {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+}
+
+.menu-overlay {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: #161616;
+  z-index: 4;
+  top: 0;
+  left: 0;
+  transition: all 0.4s ease-in-out;
+}
+
+.mobile-toggler {
+  height: 95vh;
+  background-color: #161616;
+  width: 100%;
+  box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  transition: all 0.4s ease-in-out;
+  position: fixed;
+  z-index: 5;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.menu-display {
+  left: -100%;
+}
+
+.desktop-view {
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+}
+
+.client-images {
+  position: relative;
+}
+
+.client-image {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.each-service:hover {
+  margin-top: -10px;
+  transition: all 0.3s ease;
+}
+
+.service-btn:hover {
+  background-color: #efedff;
+  color: #000;
+  transition: all 0.3s ease;
+}
+
+.testimonial-client-images {
+  display: flex;
+  justify-content: center;
+}
+
+.testimonial-client-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+
+}
+
+.bottom-image {
+  z-index: 0;
+  left: 0;
+}
+
+.middle-image {
+  z-index: 1;
+  left: 35px;
+}
+
+.top-image {
+  z-index: 2;
+  left: 60px;
+}
+
+.all-companies::-webkit-scrollbar {
+  display: none;
+}
+
+.company-container {
+  padding: 20px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  border-radius: 5px;
+  border: 1px solid #333;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  transition: all 0.3s ease;
+}
+
+.company-image {
+  height: 25px;
+}
+
+.company-container:hover {
+  background-color: #efedff;
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+
+.project-btn {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background-color: rgba(22, 22, 22, 0.7);
+  align-items: center;
+  padding-left: 30px;
+}
+
+.slick-dots li button:before {
+  color: #efedff;
+}
+
+.slick-dots li.slick-active button:before {
+  color:#efedff !important;
+  font-size: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  .mobile-view {
+    display: none;
+  }
+
+  .desktop-view {
+    display: flex;
+  }
 }
