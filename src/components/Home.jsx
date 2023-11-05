@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box } from '@mui/material';
 
-import { Header, Companies, Service, Portfolio, Pricing, Testimonials } from './';
+import { Header, Companies, Service, Portfolio, Pricing, Testimonials, Footer } from './';
 
 const Home = () => (
     <Box>
@@ -11,6 +11,7 @@ const Home = () => (
         <Portfolio />
         <Pricing />
         <Testimonials />
+        <Footer />
     </Box>
 )
 
