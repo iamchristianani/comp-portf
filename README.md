@@ -126,7 +126,7 @@ This project would be deployed using [Render.com](https://render.com/):
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- **Show more details in the channels page**
+- **Update the portfolio section with recent jobs**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
