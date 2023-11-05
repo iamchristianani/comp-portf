@@ -50,16 +50,16 @@ const Pricing = () => {
     ];
 
   return (
-    <Box p={3} mt={1}>
+    <Box p={{ xs: 3, md: '0 200px' }} mt={{ xs: 5, md: 6 }}>
         <Stack>
             <Typography variant='h6' fontWeight='200' letterSpacing={9} sx={{ background: 'radial-gradient(circle, #efedff, #5c45fd)', WebkitBackgroundClip: 'text', color: 'transparent' }}>PRICING</Typography>
-            <Typography variant='h4' mt='20px'>One fixed price to get your project done</Typography>
-            <Typography variant='subtitle1' fontWeight='200' mt='15px'>Your custom on-demand for only a single payment.</Typography>
+            <Typography variant='h4' mt='10px'>One fixed price to get your project done</Typography>
+            <Typography variant='subtitle1' fontWeight='200' mt='10px'>Your custom on-demand for only a single payment.</Typography>
         </Stack>
-        <Grid container spacing={3} mt={5}>
+        <Grid container spacing={3} mt={{ xs: 4, md: 2 }}>
             {
                 prices.map((price, index) => (
-                    <Grid item xs={12} md={4} key={index}>
+                    <Grid item xs={12} sm={6} md={4} key={index}>
                         <Card sx={{ backgroundColor: '#161616', color: '#efedff', boxShadow: '-1px -2px 1px -1px rgba(239, 237, 255, 0.2), -1px 1px 1px 0px rgba(239, 237, 255, 0.14), 1px 1px 3px 0px rgba(239, 237, 255, 0.12)' }}>
                             <CardContent>
                                 <Stack>
